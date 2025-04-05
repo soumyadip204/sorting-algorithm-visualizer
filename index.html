@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+        <div class="controls">
+            <button onclick="generateArray()">Generate New Array</button>
+
+            <label for="algorithms">Algorithm:</label>
+            <select id="algorithms">
+                <option value="bubbleSort">Bubble Sort</option>
+                <option value="selectionSort">Selection Sort</option>
+                <option value="insertionSort">Insertion Sort</option>
+                <option value="mergeSort">Merge Sort</option>
+                <option value="quickSort">Quick Sort</option>
+                <option value="heapSort">Heap Sort</option>
+            </select>
+
+            <button onclick="sortArray()">Sort</button>
+
+            <label for="arraySize">Array Size:</label>
+            <input type="range" id="arraySize" min="10" max="100" value="50" onchange="generateArray()">
+
+            <label for="speedControl">Speed:</label>
+            <input type="range" id="speedControl" min="1" max="100" value="50" onchange="updateSpeed()">
+        </div>
+
+        <!-- Flexbox container for the array and complexity information -->
+        <div style="display: flex; justify-content: space-between;">
+            <div id="array-container"></div>
+            <div id="complexity-container" style="color: white; margin-left: 20px;">
+                <h3 style="margin-bottom: 20px;">Time Complexity</h3>
+                <p><strong>Worst Case:</strong> <span id="worst-time-complexity"></span></p>
+                <p><strong>Average Case:</strong> <span id="average-time-complexity"></span></p>
+                <p><strong>Best Case:</strong> <span id="best-time-complexity"></span></p>
+                <h3><strong>Space Complexity</strong> </h3><br><span id="space-complexity"></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h4>Made with &hearts; by Soumyadip</h4>
+        <a href="https://github.com/saha204">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

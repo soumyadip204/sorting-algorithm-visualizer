@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    flex: 1;
+    /* Ensure container takes up available space */
+}
+
+
+p {
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button,
+input[type="range"],
+select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #198c7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.bar {
+    background-color: #42188b;
+    margin: 0 1px;
+}
+
+input[type="range"],
+select {
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    width: 150px;
+}
+
+label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#complexity-container {
+    text-align: left;
+    width: 250px;
+}
+
+#array-container {
+    flex-grow: 1;
+}
+
+/* Other styles */
+
+footer {
+    padding: 10px;
+    background-color: #0f0e0e;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    /* Adjust this value to move the footer down */
+    position: relative;
+    width: 100%;
+}
