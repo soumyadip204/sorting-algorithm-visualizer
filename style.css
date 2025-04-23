@@ -92,8 +92,6 @@
     width: 100%;
     border: 1px solid #ccc;
     flex-grow: 1;
-    /* Hide any tiny overflow from rounding or margins */
-    overflow: hidden;
   }
   
   .bar {
@@ -159,7 +157,7 @@
     }
   
     #array-container {
-      height: 250px;
+      height: auto;
     }
   
     #complexity-container h3 {
